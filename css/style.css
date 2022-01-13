@@ -11,8 +11,28 @@ body {
    background-color: rgb(243, 241, 223);
 }
 .header {
-   margin: 20px;
+   margin: 20px 0;
    width: 100%;
+   height: 70px;
+   background-color: forestgreen;
+   display:flex;
+   align-items: center;
+}
+.header .header-text {
+   color: white;
+   height: 40px;
+   font-family: serif;
+   font-size: 2.5rem;
+   font-weight: bold;
+   padding-left: 25px;
+   display: flex;
+   align-items:center;
+}
+.header .header-slogan {
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(248, 248, 149);
+   margin-left: 10px;
+   font-size: 1.2rem;
 }
 .main {
    width: 100%;
