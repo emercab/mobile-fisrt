@@ -8,12 +8,22 @@ html {
 }
 body {
    font-size: 1.6rem;
-   background-color: rgb(235, 231, 195);
+   background-color: rgb(243, 241, 223);
+}
+.header {
+   margin: 20px;
+   width: 100%;
 }
 .main {
    width: 100%;
    max-width: 1200px;
-   margin: 20px;
+   margin: 0 auto;
+   border: solid 1px gray;
+   background-color: lightgrey;
+}
+.main .main-section1 {
+   margin: 0 auto;
+   padding: 20px;
 }
 .text-blue {
    color: darkblue;
