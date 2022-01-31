@@ -1,0 +1,514 @@
+/*
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografía
+4. Visuales
+Otros
+*/
+:root {
+   /* Colores */
+   --bitcoin-orange: #f7931a;
+   --soft-orange: #ffe9d5;
+   --secondary-blue: #1a9af7;
+   --green: #008f4c;
+   --soft-blue: #e7f5ff;
+   --warm-black: #201e1c;
+   --black: #282623;
+   --grey: #bababa;
+   --grey2: #757575;
+   --off-white: #faf8f7;
+   --white: #fff;
+   /* Fuentes */
+   --dm-sans: 'DM Sans', sans-serif;
+   --inter: 'Inter', sans-serif;
+}
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html {
+   font-size: 62.5%;
+   font-family: var(--dm-sans);
+   scroll-behavior: smooth;
+}
+header {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   min-width: 320px;
+   height: 33.4rem;
+   text-align: center;
+   background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--bitcoin-orange) 100%);
+}
+header img {
+   width: 15rem;
+   height: 2.4rem;
+   margin-top: 6rem;
+   align-self: center;
+}
+.header__title--container {
+   width: 90%;
+   min-width: 288px;
+   max-width: 900px;
+   height: 21.8rem;
+   margin-top: 4rem;
+   align-self: center;
+}
+.header__title--container h1 {
+   font-size: 2.4rem;
+   font-weight: bold;
+   color: var(--white);
+   line-height: 2.6rem;
+}
+.header__title--container p {
+   margin-top: 2.5rem;
+   font-size: 1.4rem;
+   color: var(--soft-orange);
+   font-weight: 500;
+   line-height: 1.8rem;
+}
+.header__title--container .header__button {
+   position: absolute;
+   top: 31rem;
+   left: calc(50% - 11.5rem);
+   display: block;
+   width: 22.9rem;
+   min-height: 4.8rem;
+   padding: 1.5rem;
+   font-size: 1.4rem;
+   font-weight: bold;
+   text-decoration: none;
+   line-height: 1.823rem;
+   background-color: var(--off-white);
+   color: var(--warm-black);
+   box-shadow: 0px 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+   border-radius: 0.4rem;
+}
+.header__title--container .header__button span {
+   display: inline-block;
+   width: 1.3rem;
+   height: 0.8rem;
+   margin-left: 1rem;
+   background-image: url('../assets/icons/down-arrow.svg');
+   background-repeat: no-repeat;
+}
+main {
+   width: 100%;
+   min-width: 320px;
+   height: auto;
+   background-color: var(--off-white);
+}
+.main-exchange-container {
+   width: 100%;
+   height: auto;
+   padding: 7rem 0 0;
+   text-align: center;
+}
+.main-exchange-container .background-image {
+   width: 195px;
+   height: 195px;
+   margin: 0 auto 4rem;
+   background: url('../assets/img/bitcoin.svg') center/cover no-repeat;
+   /* background-image, background-size, background-position, background-repeat */
+}
+.main-exchange-container__title {
+   width: 90%;
+   min-width: 288px;
+   max-width: 900px;
+   margin: 0 auto;
+}
+.main-exchange-container h2 {
+   margin-bottom: 3rem;
+   font-size: 2.4rem;
+   font-weight: bold;
+   line-height: 2.6rem;
+   color: var(--black);
+}
+.main-exchange-container__text {
+   margin-bottom: 4.8rem;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.6rem;
+   color: var(--grey2);
+}
+.currency {
+   display: flex;
+   justify-content: center;
+}
+.currency__table {
+   width: 62%;
+   min-width: 210px;
+   max-width: 320px;
+   font-family: var(--inter);
+   font-size: 1.6rem;
+   font-weight: 500;
+   line-height: 1.93rem;
+   color: #B5B0AC;
+}
+.currency__table--title {
+   padding-left: 12px;
+   text-align: left;
+   font-size: 1.8rem;
+   font-weight: bold;
+   color: #FF9536;
+   line-height: 2.34rem;
+}
+.currency__table--container {
+   margin-top: 1.2rem;
+}
+.currency__table--table {
+   width: 100%;
+   margin-bottom: 1.6rem;
+   background-color: var(--white);
+}
+.currency__table--table tr {
+   height: 4rem;
+   text-align: left;
+}
+.currency__table--table td {
+   padding: 10px 12px;
+}
+.currency__table--table-right {
+   font-family: var(--inter);
+   font-size: 1.4rem;
+   font-weight: 400;
+   color: var(--grey2);
+   line-height: 1.694rem;
+}
+.currency__table--table .corner-top-left {
+   border-radius: 8px 0 0 0;
+}
+.currency__table--table .corner-top-right {
+   border-radius: 0 8px 0 0;
+}
+.currency__table--table .corner-bottom-left {
+   border-radius: 0 0 0 8px;
+}
+.currency__table--table .corner-bottom-right {
+   border-radius: 0 0 8px 0;
+}
+.currency__table--icon-down {
+   display: inline-block;
+   margin-left: 1rem;
+   width: 1.2rem;
+   height: 1.2rem;
+   background: url("../assets/icons/trending-down.svg") center/cover no-repeat;
+}
+.currency__table--icon-up {
+   display: inline-block;
+   margin-left: 1rem;
+   width: 1.2rem;
+   height: 1.2rem;
+   background: url("../assets/icons/trending-up.svg") center/cover no-repeat;
+}
+.currency__date {
+   display: flex;
+   margin-bottom: 6.5rem;
+   border-radius: 8px;
+   justify-content: center;
+   align-items: center;
+   height: 3.1rem;
+   background-color: var(--soft-orange);
+}
+.currency__date--text {
+   font-family: var(--inter);
+   font-size: 1.2rem;
+   color: var(--warm-black);
+   line-height: 1.452rem;
+}
+.benefits {
+   position: relative;
+   width: 100%;
+   min-width: 320px;
+   padding: 6.4rem 0 3.4rem;
+   height: auto;
+   background-color: var(--warm-black);
+   text-align: center;
+}
+.benefits__icon {
+   position: absolute;
+   width: 4.1rem;
+   height: 2.4rem;
+   top: -1.2rem;
+   left: calc(50% - 2.05rem);
+   background: url("../assets/icons/batata.svg") center/cover no-repeat;
+}
+.benefits__intro {
+   width: 90%;
+   height: auto;
+   margin: 0 auto;
+   min-width: 260px;
+   max-width: 500px;
+   margin-bottom: 3.2rem;
+}
+.benefits__intro--title {
+   font-size: 2.4rem;
+   font-weight: bold;
+   line-height: 2.6rem;
+   color: var(--white);
+}
+.benefits__intro--text {
+   margin-top: 2.4rem;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #808080;
+}
+.benefits__cards--container {
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+   min-width: 260px;
+   max-width: 950px;
+   margin: 0 auto;
+   text-align: left;
+}
+.benefits__card {
+   align-self: center;
+   width: 100%;
+   min-width: 288px;
+   max-width: 400px;
+   min-height: 15.2rem;
+   margin-bottom: 1.6rem;
+   padding: 1.6rem 2rem 2.2rem 1.6rem;
+   border-radius: 4px;
+   background-color: var(--black);
+}
+.benefits__card--icon {
+   display: inline-block;
+   width: 22px;
+   height: 22px;
+   margin-bottom: 1.2rem;
+}
+.benefits__card--icon-clock {
+   background: url("../assets/icons/clock.svg") center/cover no-repeat;
+}
+.benefits__card--icon-eye {
+   background: url("../assets/icons/eye.svg") center/cover no-repeat;
+}
+.benefits__card--icon-dollar {
+   background: url("../assets/icons/dollar-sign.svg") center/cover no-repeat;
+}
+.benefits__card--icon-check {
+   background: url("../assets/icons/check-circle.svg") center/cover no-repeat;
+}
+.benefits__card--title {
+   margin-bottom: 1rem;
+   font-size: 1.8rem;
+   font-weight: bold;
+   line-height: 1.8rem;
+   color: var(--white);
+}
+.benefits__card--text {
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #808080;
+}
+.know-it {
+   width: 100%;
+   text-align: center;
+   min-width: 320px;
+   height: 60vh;
+   background: url("../assets/img/bitcoinbaby2x.jpg") center/cover no-repeat;
+}
+.know-it__title {
+   padding-top: 6.4rem;
+   font-size: 2.4rem;
+   font-weight: bold;
+   line-height: 2.6rem;
+   color: var(--white);
+}
+.plans {
+   width: 100%;
+   min-width: 320px;
+   height: auto;
+   margin: 0 auto;
+   padding: 6.4rem 0 2rem;
+   background-color: #e5e5e5;
+}
+.plans__intro {
+   width: 90%;
+   min-width: 288px;
+   margin: 0 auto;
+   text-align: center;
+}
+.plans__intro--title {
+   font-size: 2.4rem;
+   font-weight: bold;
+   line-height: 2.6rem;
+   color: var(--warm-black);
+}
+.plans__intro--text {
+   margin-top: 2.4rem;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: var(--grey2);
+}
+.plans__cards--container {
+   display: flex;
+   height: auto;
+   padding: 0 2rem;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain;
+   scroll-snap-type: x proximity;
+}
+.plans__card {
+   position: relative;
+   scroll-snap-align: center;
+   width: 60%;
+   min-width: 200px;
+   max-width: 250px;
+   margin: 5rem 1rem 4rem;
+   min-height: 24.7rem;
+   padding-bottom: 2.4rem;
+   background-color: var(--white);
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+   text-align: center;
+}
+.plans__card:hover {
+   box-shadow: 0px 4px 8px rgba(26, 25, 25, 0.5);
+   transform: scale(1.03);
+   transition: all 0.5s ease;
+}
+.plans__card .bg-orange {
+   background-color: var(--bitcoin-orange);
+}
+.plans__card .bg-green {
+   background-color: var(--green);
+}
+.plans__card .bg-blue {
+   background-color: var(--secondary-blue);
+}
+.plans__card--title {
+   position: absolute;
+   top: -1.6rem;
+   left: calc(50% - 5.05rem);
+   width: 10.1rem;
+   height: 3.1rem;
+   padding: 0.8rem;
+   font-family: var(--inter);
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 1.452rem;
+   border-radius: 8px;
+   color: var(--white);
+}
+.plans__card--text {
+   padding-top: 3.1rem;
+   margin-bottom: 0.8rem;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #000;
+}
+.plans__card--value {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   margin-bottom: 1.6rem;
+}
+.plans__card--value .value {
+   font-family: var(--inter);
+   font-size: 5.2rem;
+   font-weight: bold;
+   line-height: 6.293rem;
+   color: #000;
+}
+.plans__card--value .dollar {
+   margin: 0.8rem 0.3rem 0 0;
+   font-family: var(--inter);
+   font-size: 1.2rem;
+   font-weight: 500;
+   line-height: 1.452rem;
+   color: #363636;
+}
+.plans__card--description {
+   margin-bottom: 1.6rem;
+   font-family: var(--inter);
+   font-size: 1.2rem;
+   font-weight: 500;
+   line-height: 1.452rem;
+   color: var(--grey2);
+}
+.plans__card--button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 15.1rem;
+   height: 4.8rem;
+   padding: 1.2rem 1.6rem;
+   margin: 0 auto;
+   font-family: var(--dm-sans);
+   font-size: 1.4rem;
+   line-height: 1.823rem;
+   color: var(--warm-black);
+   border-radius: 4px;
+   background-color: var(--off-white);
+}
+.plans__card .border-btn-orange {
+   border: 2px solid var(--bitcoin-orange);
+}
+.plans__card .border-btn-green {
+   border: 2px solid var(--green);
+}
+.plans__card .border-btn-blue {
+   border: 2px solid var(--secondary-blue);
+}
+.plans__card--button .arrow {
+   display: inline-block;
+   margin-left: 0.3rem;
+   width: 2rem;
+   height: 2rem;
+   background: url("../assets/icons/arrow-right.svg") center/cover no-repeat;
+}
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   min-height: 15rem;
+   background-color: var(--bitcoin-orange);
+}
+.footer__links {
+   display: flex;
+   width: 30%;
+   min-width: 90px;
+   flex-direction: column;
+   margin: 4rem 0 4rem 6.5rem;
+}
+.footer__links--item {
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: var(--white);
+   text-decoration: none;
+   padding-top: .5rem;
+   margin-bottom: 0.8rem;
+}
+.footer__logo {
+   display: flex;
+   width: 25%;
+   min-width: 80px;
+   flex-direction: column;
+   margin: 0 5rem 0 0;
+}
+.footer__logo--img {
+   display: inline-block;
+   align-self: center;
+   width: 4.1rem;
+   height: 2.4rem;
+   background: url("../assets/icons/batata.svg") center/cover no-repeat;
+}
+.footer__logo--text {
+   align-self: center;
+   font-size: 0.8rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: var(--soft-orange);
+}

@@ -1,0 +1,33 @@
+html {
+   font-size: 70%;
+}
+header {
+   height: 27rem;
+}
+header img {
+   width: 19.5rem;
+   height: 3.12rem;
+   margin-top: 4rem;
+}
+.header__title--container .header__button {
+   top: 24.5rem;
+}
+.benefits__cards--container {
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.know-it__title {
+   font-size: 4.5rem;
+}
+.plans__cards--container {
+   overflow-x: hidden;
+   justify-content: center;
+}
+.plans__card {
+   margin-left: 2.5rem;
+   margin-right: 2.5rem;
+}
+.plans__card--description {
+   padding: 0 0.4rem;
+}
